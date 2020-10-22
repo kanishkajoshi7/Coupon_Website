@@ -1,0 +1,168 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    
+ }
+
+ * { box-sizing: border-box;}
+ .button { 
+    padding : 8px;
+    background: whitesmoke;
+    float: left;
+    border: 1px solid black;
+    width: 33.33%;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    color: black;
+    
+  }
+  
+  .button:hover {
+    background: lightgrey;
+  }
+ .button:focus {
+   background: lightblue;
+ }
+  body {
+  background-image: url("../1710991737-Shikhar Gilhotra/assets/Dummy Background 1.png");
+  background-size: cover;
+
+  }
+
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  
+  .popup {
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 900px;
+    height: 400px;
+    position: relative;
+    transition: all 1s ease-in-out;
+    overflow-y: auto;
+    margin-top:0px;
+  }
+  
+  .set{
+      margin-top: 5px;
+      margin-bottom:5px;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 100ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: blue;
+  }
+  
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+    position: relative;
+
+  } 
+  .clearfix {
+    overflow: auto;
+    border:0.5px solid black;   
+  }
+  .img2 {
+    float: left;
+    margin-top:8px;
+    margin-left:5px;
+  }
+
+  .g{
+    position: fixed;
+    background-color: yellow;
+  }
+  .redText{
+    color:red;
+  }
+ .clearfix:active{
+    background-color:lightgrey;
+    alert
+  }
+  .k{
+    overflow: auto;
+    border: 5px dotted #bbb;
+    background-color: #f1f1f1;
+  }
+  .j{
+    margin-left:10px;
+    margin-bottom:15px;
+  }
+  .checked{
+    color:orange;
+  }
+  .v{
+    margin-bottom: 5px;
+  }
+  .l{
+    content: "\20B9";
+  }
+  .s:hover {
+    background-color: rgb(236, 179, 179); /* Green */
+    color: white;
+  }
+  .s:active {
+    background-color:rgb(149, 106, 192);
+  }
+  .close-popup {
+    background: rgba(0,0,0,.7);
+    cursor: default;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden; 
+    -webkit-transition: opacity .5s, visibility 0s linear .5s;
+    
+  }
+  .overlay:target + .close-popup{  
+    opacity: 1;
+    visibility: visible;
+     transition: 0s;
+  } 
+  .overlay {
+    position: fixed;
+    top: 45%;
+    bottom: 0;
+    right:0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 150ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    height:400px;
+    width:900px;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+    
+  }
+ 
+
+
+ 
+

@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Java Script is only and only used for copying coupon code to the clipboard rest all the assignment is made of html & css -->
+        <script>
+            function myFunction() {
+              var fetch = document.getElementById("fetch_id");
+              fetch.select();
+              document.execCommand("copy");
+              alert("Success!! " + fetch.value + " Code has been successfully copied to the clipboard");
+            }
+            </script>
+      
+    </head>
+    <body> <!-- The webpage contain dummy background image of e-commerce website  -->
+        <!-- Code For Footer as per point number 1 of assignment -->
+        <div class="footer">
+           
+            <a class="button" href="#popup1">
+            
+                <i class="fa fa-search" style="font-size:35px;color:black"></i><br>
+                <h3 class = "set">Compare Prices</h3>
+               
+            </a>
+            <a class="button" href="#popup2">
+                <i class="fa fa-star-o" style="font-size:35px;color:gold"></i><br>
+                
+                <h3 class = "set">Deals</h3>
+                
+                </a>
+             <a class="button" href="#popup3">
+                <i class="fa fa-tag" style="font-size:35px;color:red"></i><br>
+                <h3 class = "set">Coupons</h3>
+                
+             </a>
+          </div>
+
+          <!-- Footer code ends here  -->
+
+          <!-- Pop-up windows for all 3 options , covers point 2,3 of assignment -->
+          <div id="popup1" class="overlay">
+            <div class="popup">
+              
+                <a class="close" href="#">&times;</a>
+               <h2>Compare Prices <span class="l">&#8377;</span></h2>
+                    <div class="vertical-menu">
+                        
+                        <div class="clearfix ">
+                            <div class="v">
+                              
+                            <img class="img2" src="../1710991737-Shikhar Gilhotra/assets/Smartphones.jpg" alt="Phone_Item" width="100" height="100">
+                            <h4>Samsung Galaxy M21 (Raven Black, 64 GB)  (4 GB RAM)</h4>
+                            1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase <b>Price: 20000</b><br>
+                                
+                                <h4>Free Shipping</h4><br>
+                            </div>
+                          </div>
+                        <br>
+                          <div class="clearfix">
+
+                    <div class="v">
+                            <img class="img2" src="../1710991737-Shikhar Gilhotra/assets/Smartphones.jpg" alt="Phone_Item" width="100" height="100">
+                            <h4>Samsung Galaxy M21 (Raven Black, 64 GB)  (4 GB RAM)</h4>
+                            1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase <b>Price: 20000</b><br>
+                                
+                                <h4>Free Shipping</h4><br>
+                            </div>
+                          </div>
+                          
+                            <br>    
+                          <div class="clearfix">
+                            <div class="v">
+                                <img class="img2" src="../1710991737-Shikhar Gilhotra/assets/Smartphones.jpg" alt="Phone_Item" width="100" height="100">
+                                <h4>Samsung Galaxy M21 (Raven Black, 64 GB)  (4 GB RAM)</h4>
+                                1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase <b>Price: 20000</b><br>
+                                    
+                                    <h4>Free Shipping</h4><br>
+                                </div>
+                              </div>
+                              </div>
+                          </div>
+                    </div>
+                    <a href="#" class="close-popup"></a>
+                    <!-- Pop-up for Compare Prices ends here -->
+                     
+        <!-- Pop-up window for hot deals begin -->
+        <div id="popup2" class="overlay">
+            <div class="popup">
+                
+                <a class="close" href="#">&times;</a>
+               <h2>Hot Deals in this Category &nbsp;<i class="fa fa-fire" style="font-size:20px;color:gold"></i>&nbsp;<i class="fa fa-fire" style="font-size:20px;color:gold"></i></h2>
+                    <div class="vertical-menu">
+                        <div class="clearfix ">
+                            <img class="img2" src="../1710991737-Shikhar Gilhotra/assets/Smartphones.jpg" alt="Phone_Item" width="100" height="100">
+                            <h4>Samsung Galaxy M21 (Raven Black, 64 GB)  (4 GB RAM)</h4>
+                            1 year manufacturer warranty for device and 6 months manufacturer warranty <br>
+                            <b><strike>Price: 20000</strike></b> <span class="redText">80% Off</span><br>
+                            <h4>Free Shipping</h4><br>
+                          </div>
+                        <br>
+                          <div class="clearfix ">
+                            <img class="img2" src="../1710991737-Shikhar Gilhotra/assets/Smartphones.jpg" alt="Phone_Item" width="100" height="100">
+                            <h4>Samsung Galaxy M21 (Raven Black, 64 GB)  (4 GB RAM)</h4>
+                            1 year manufacturer warranty for device and 6 months manufacturer warranty <br>
+                            <b><strike>Price: 20000</strike></b> <span class="redText">60% Off</span><br>
+                            <h4>Free Shipping</h4><br>
+                          </div>
+                    </div>
+                     
+                   
+                
+            </div>
+        </div>
+        <a href="#" class="close-popup"></a>
+
+        <!-- Pop-up window for hot deals end -->
+
+        <!-- Pop-up window for coupon start -->
+        <div id="popup3" class="overlay">
+            <div class="popup">
+                
+                <a class="close" href="#">&times;</a>
+               <h2>Coupons &nbsp;<i class="fa fa-tag" style="font-size:20px;color:red"></i></h2>
+                    <div class="vertical-menu">
+                        <div class="k">
+                            <div class="j">
+                            <h3 style="color:red;">919MANGO</h3> <span class="heading">User Rating</span>
+                            <p>20% Cashback on Elec, Gas & Landline Bill Payment of Rs400 or more Max Rs100 cashback</p>
+                            
+                            <input type="text" value="919MANGO" id="fetch_id">
+                            <button class="s" onclick="myFunction()">Click to Copy Code</button>
+                            
+                            <h5>Cashback - Bill Payments - Prepaid - Postpaid - Non-Airtel</h5>
+                            
+                        </div>
+                          </div>
+                        <br>
+                        
+                    </div>
+                     
+                   
+                
+            </div>
+        </div>
+        <a href="#" class="close-popup"></a>
+        <!-- Pop-up window for coupon end -->
+          
+    </body>
+</html>
